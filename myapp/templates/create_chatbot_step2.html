@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Chatbot - Step 2</title>
+</head>
+<body>
+    <h1>Configure Personality</h1>
+    <form method="POST">
+        {% csrf_token %}
+        
+        <label for="tone">Tone:</label>
+        <input type="range" id="tone" name="tone" min="1" max="3">
+        <p>
+            <small>
+                <strong>1:</strong> Formal &nbsp;&nbsp;
+                <strong>2:</strong> Neutral &nbsp;&nbsp;
+                <strong>3:</strong> Friendly
+            </small>
+        </p>
+        
+        <label for="behavior">Behavior:</label>
+        <textarea id="behavior" name="behavior" rows="4" cols="50"></textarea>
+        
+        <button type="submit">Next</button>
+    </form>
+</body>
+</html>

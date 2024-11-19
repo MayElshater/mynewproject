@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Chatbot - Step 1</title>
+</head>
+<body>
+    <h1>Create Chatbot - Step 1</h1>
+    <form method="post">
+        {% csrf_token %}
+        <label for="name">Chatbot Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea><br><br>
+        <button type="submit">Next</button>
+    </form>
+</body>
+</html>
